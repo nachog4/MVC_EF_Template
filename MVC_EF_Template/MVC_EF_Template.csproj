@@ -136,6 +136,7 @@
     <Compile Include="DAL\DatabaseInitializer.cs" />
     <Compile Include="DAL\DatabaseInterceptorLogging.cs" />
     <Compile Include="DAL\DatabaseInterceptorTransientErrors.cs" />
+    <Compile Include="Filters\HandleConcurrencyExceptionFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

@@ -8,6 +8,8 @@ namespace MVC_EF_Template
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+
+            filters.Add(new HandleConcurrencyExceptionFilter()); //handler de excepciones de concurrencia! (adam tuliper)
         }
     }
 }
