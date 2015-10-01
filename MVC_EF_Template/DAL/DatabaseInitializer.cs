@@ -19,6 +19,8 @@ namespace MVC_EF_Template.DAL
 
             students.ForEach(s => context.Students.Add(s));
             context.SaveChanges();
+
+            base.Seed(context);
         }
     }
 }

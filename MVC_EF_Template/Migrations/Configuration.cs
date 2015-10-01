@@ -10,7 +10,6 @@ namespace MVC_EF_Template.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
-            ContextKey = "MVC_EF_Template.DAL.DatabaseContext";
         }
 
         protected override void Seed(MVC_EF_Template.DAL.DatabaseContext context)

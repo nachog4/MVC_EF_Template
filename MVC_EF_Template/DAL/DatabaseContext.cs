@@ -15,9 +15,15 @@ namespace MVC_EF_Template.DAL
         public DbSet<Subject> Subjects { get; set; }
 
         //public DatabaseContext() : base("name=DbConnectionString") { }
+        
+        public DatabaseContext ()
+        {
+            Database.SetInitializer<DatabaseContext>(new MVC_EF_Template.DAL.DatabaseInitializer());
+        }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+           
             //modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             //modelBuilder.Entity<Course>()

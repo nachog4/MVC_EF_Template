@@ -12,7 +12,7 @@ namespace MVC_EF_Template.DAL
     {
         public DatabaseConfiguration()
         {
-            //SetExecutionStrategy("System.Data.SqlClient", () => new SqlAzureExecutionStrategy());
+            SetExecutionStrategy("System.Data.SqlClient", () => new SqlAzureExecutionStrategy());
         }
     }
 }
